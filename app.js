@@ -121,6 +121,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Prevent link navigation when in edit mode
+  document.addEventListener('click', (e) => {
+    if (isEditMode && e.target.closest('.contact-link')) {
+      e.preventDefault();
+    }
+  });
+
+  // Sync href attributes when link texts are edited
+  const phoneLink = document.getElementById('res-phone');
+  const emailLink = document.getElementById('res-email');
+  const linkedinLink = document.getElementById('res-linkedin');
+
+  if (phoneLink) {
+    phoneLink.addEventListener('blur', () => {
+      const val = phoneLink.innerText.trim();
+      phoneLink.setAttribute('href', `tel:${val.replace(/\s+/g, '')}`);
+    });
+  }
+  if (emailLink) {
+    emailLink.addEventListener('blur', () => {
+      const val = emailLink.innerText.trim();
+      emailLink.setAttribute('href', `mailto:${val}`);
+    });
+  }
+  if (linkedinLink) {
+    linkedinLink.addEventListener('blur', () => {
+      let val = linkedinLink.innerText.trim();
+      if (!val.startsWith('http://') && !val.startsWith('https://')) {
+        val = 'https://' + val;
+      }
+      linkedinLink.setAttribute('href', val);
+    });
+  }
+
   // Event Listeners
   themeSelect.addEventListener('change', (e) => {
     const selectedTheme = e.target.value;

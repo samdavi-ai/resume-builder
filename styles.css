@@ -290,6 +290,17 @@ body {
   color: var(--text-dark);
 }
 
+.contact-info .contact-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+.contact-info .contact-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
 .contact-info .separator {
   color: var(--primary-color);
   font-weight: bold;
