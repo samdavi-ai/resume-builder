@@ -1,0 +1,36 @@
+course-Artificial intelligence -Novitech (2025)
+Software Development Engineer (SDE) Intern
+Bluestock Fintech (Remote) | Feb 2026 – Mar 2026
+Developed and contributed to multiple software applications, including an Open-Source AI Profile Picture Maker, Corporate Blog Platform, and DailyMind Puzzle Game.
+Implemented backend features, optimized application performance, and collaborated on end-to-end software development.
+Applied software engineering best practices, debugging techniques, and version control workflows using Git/GitHub.
+
+
+
+
+work experience
+
+Software Development Engineer (SDE) Intern
+Bluestock Fintech (Remote) | Feb 2026 – Mar 2026
+Developed software applications including an AI Profile Picture Maker, Corporate Blog Platform, and DailyMind Puzzle Game.
+Implemented features, fixed bugs, and optimized application performance across multiple projects.
+Collaborated using Git and software development best practices to deliver production-ready solutions.
+Data Analysis Intern
+Infogro Technology, Chennai | Jun 2025 – Jul 2025
+Performed data cleaning, preprocessing, and exploratory data analysis on real-world datasets.
+Utilized SQL and Python to extract insights and support data-driven decision-making.
+Created reports and visualizations to communicate findings effectively.
+Python Programming Intern
+Thedal Cloud, Thoothukudi | Dec 2024 – Jan 2025
+Developed Python programming skills through hands-on coding and problem-solving exercises.
+Worked with data structures, file handling, and data processing techniques.
+Built small automation programs while improving debugging and logical reasoning skills.
+
+
+Narocare – Hospital Appointment & Queue Management Mobile App
+Flutter, Firebase Firestore, Firebase Authentication, FCM, Google Maps API
+Developed a Flutter-based mobile application for hospital appointment booking and real-time token queue management.
+Implemented separate patient and hospital dashboards with live synchronization using Firebase Firestore.
+Integrated GPS-based hospital discovery, doctor scheduling, and automated token generation.
+Enabled secure OTP authentication and push notifications using Firebase services.
+Designed a responsive healthcare-focused UI with a scalable Firebase backend architecture.

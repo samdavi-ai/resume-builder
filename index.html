@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ariharasuthan S - Resume</title>
+  <meta name="description" content="Professional resume of Ariharasuthan S, Data Analyst and AI & ML Enthusiast. Created with a premium interactive template.">
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-lavender">
+
+  <!-- Interactive Dashboard (Hidden in Print) -->
+  <header class="dashboard-header no-print">
+    <div class="dashboard-container">
+      <div class="brand">
+        <span class="logo-icon">📄</span>
+        <h1>Resume Builder & Preview</h1>
+      </div>
+      
+      <div class="controls">
+        <div class="theme-selector">
+          <label for="theme-select">Theme:</label>
+          <select id="theme-select">
+            <option value="theme-lavender" selected>Classic Lavender (Sam's Style)</option>
+            <option value="theme-slate">Sleek Slate Blue</option>
+            <option value="theme-dark">Modern Dark Mode</option>
+            <option value="theme-charcoal">Minimalist Charcoal</option>
+          </select>
+        </div>
+        
+        <button id="edit-btn" class="btn btn-secondary" title="Click text to edit it in place">
+          <span class="btn-icon">✏️</span> Edit Mode
+        </button>
+        
+        <button id="reset-btn" class="btn btn-danger" title="Reset all changes to original values">
+          <span class="btn-icon">🔄</span> Reset Data
+        </button>
+        
+        <button id="print-btn" class="btn btn-primary" title="Print or save as PDF">
+          <span class="btn-icon">🖨️</span> Print Resume
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Edit Mode Help Banner (Hidden in Print) -->
+  <div id="edit-banner" class="edit-banner no-print hidden">
+    <div class="banner-content">
+      <span class="pulse-icon">●</span> 
+      <strong>Edit Mode Active:</strong> Click any text in the resume below to modify it. Your changes are saved automatically.
+    </div>
+  </div>
+
+  <!-- Main Resume Sheet Page -->
+  <main class="resume-sheet">
+    <div class="resume-content">
+      
+      <!-- HEADER SECTION -->
+      <section class="resume-header">
+        <h1 id="res-name" class="editable" data-key="name">ARIHARASUTHAN S</h1>
+        <div class="subtitle">
+          <span id="res-subtitle" class="editable" data-key="subtitle">| PYTHON DEVELOPER | AI & ML ENTHUSIAST |</span>
+        </div>
+        <div class="contact-info">
+          <span id="res-location" class="editable" data-key="location">Thoothukudi, Tamil Nadu, India</span>
+          <span class="separator">•</span>
+          <span id="res-phone" class="editable" data-key="phone">+91 66380959068</span>
+          <span class="separator">•</span>
+          <span id="res-email" class="editable" data-key="email">ariharasuthan197@gmail.com</span>
+          <span class="separator">•</span>
+          <span id="res-linkedin" class="editable" data-key="linkedin">linkedin.com/in/ariharasuthan</span>
+        </div>
+      </section>
+
+      <hr class="section-divider">
+
+      <!-- SUMMARY SECTION -->
+      <section class="resume-section">
+        <h2 class="section-title">SUMMARY</h2>
+        <div class="section-body">
+          <p id="res-summary" class="summary-text editable" data-key="summary">Highly motivated B.Tech student specializing in Artificial Intelligence and Data Science with a strong foundation in software engineering, data extraction, analysis, and visualization. Experienced in building application backends, performing exploratory data analysis, and deploying ML/AI models. Proficient in Python, SQL, and Flutter, with a proven ability to collaborate and deliver production-ready software solutions.</p>
+        </div>
+      </section>
+
+      <hr class="section-divider">
+
+      <!-- TECHNICAL SKILLS SECTION -->
+      <section class="resume-section">
+        <h2 class="section-title">TECHNICAL SKILLS</h2>
+        <div class="section-body">
+          <ul class="skills-list">
+            <li>
+              <strong>Programming Languages:</strong> 
+              <span id="skill-languages" class="editable" data-key="skill-languages">Python, SQL, Dart</span>
+            </li>
+            <li>
+              <strong>Data Tools:</strong> 
+              <span id="skill-tools" class="editable" data-key="skill-tools">SQL, Python, Tableau, Microsoft Excel</span>
+            </li>
+            <li>
+              <strong>Core Competencies:</strong> 
+              <span id="skill-core" class="editable" data-key="skill-core">Software Engineering, Data Cleaning, Exploratory Data Analysis, Machine Learning, Mobile App Development</span>
+            </li>
+            <li>
+              <strong>Libraries & Frameworks:</strong> 
+              <span id="skill-frameworks" class="editable" data-key="skill-frameworks">Flutter, Pandas, NumPy, scikit-learn</span>
+            </li>
+            <li>
+              <strong>Cloud & Databases:</strong> 
+              <span id="skill-cloud" class="editable" data-key="skill-cloud">Firebase Firestore, Firebase Authentication, Cloud Messaging</span>
+            </li>
+            <li>
+              <strong>APIs & Tools:</strong> 
+              <span id="skill-apis" class="editable" data-key="skill-apis">Google Maps API, Git, GitHub, Jupyter Notebook</span>
+            </li>
+            <li>
+              <strong>Soft Skills:</strong> 
+              <span id="skill-soft" class="editable" data-key="skill-soft">Communication, Problem-Solving, Team Collaboration, Leadership</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="section-divider">
+
+      <!-- WORK EXPERIENCE SECTION -->
+      <section class="resume-section page-break-before">
+        <h2 class="section-title">WORK EXPERIENCE</h2>
+        <div class="section-body experience-container">
+          
+          <!-- Experience Item 1 -->
+          <div class="experience-item">
+            <div class="item-header">
+              <h3 class="job-title editable" data-key="job-title-1">Software Development Engineer (SDE) Intern</h3>
+            </div>
+            <div class="item-meta">
+              <span class="company-name editable" data-key="job-company-1">Bluestock Fintech (Remote)</span>
+              <span class="date-range editable" data-key="job-date-1">Feb 2026 – Mar 2026</span>
+            </div>
+            <ul class="item-bullets" data-key="job-bullets-1">
+              <li class="editable">Developed software applications including an AI Profile Picture Maker, Corporate Blog Platform, and DailyMind Puzzle Game.</li>
+              <li class="editable">Implemented features, fixed bugs, and optimized application performance across multiple projects.</li>
+              <li class="editable">Collaborated using Git and software development best practices to deliver production-ready solutions.</li>
+            </ul>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="experience-item">
+            <div class="item-header">
+              <h3 class="job-title editable" data-key="job-title-2">Data Analysis Intern</h3>
+            </div>
+            <div class="item-meta">
+              <span class="company-name editable" data-key="job-company-2">Infogro Technology, Chennai</span>
+              <span class="date-range editable" data-key="job-date-2">Jun 2025 – Jul 2025</span>
+            </div>
+            <ul class="item-bullets" data-key="job-bullets-2">
+              <li class="editable">Performed data cleaning, preprocessing, and exploratory data analysis on real-world datasets.</li>
+              <li class="editable">Utilized SQL and Python to extract insights and support data-driven decision-making.</li>
+              <li class="editable">Created reports and visualizations to communicate findings effectively.</li>
+            </ul>
+          </div>
+
+          <!-- Experience Item 3 -->
+          <div class="experience-item">
+            <div class="item-header">
+              <h3 class="job-title editable" data-key="job-title-3">Python Programming Intern</h3>
+            </div>
+            <div class="item-meta">
+              <span class="company-name editable" data-key="job-company-3">Thedal Cloud, Thoothukudi</span>
+              <span class="date-range editable" data-key="job-date-3">Dec 2024 – Jan 2025</span>
+            </div>
+            <ul class="item-bullets" data-key="job-bullets-3">
+              <li class="editable">Developed Python programming skills through hands-on coding and problem-solving exercises.</li>
+              <li class="editable">Worked with data structures, file handling, and data processing techniques.</li>
+              <li class="editable">Built small automation programs while improving debugging and logical reasoning skills.</li>
+            </ul>
+          </div>
+          
+        </div>
+      </section>
+
+      <hr class="section-divider">
+
+      <!-- PROJECTS SECTION -->
+      <section class="resume-section">
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="section-body projects-container">
+          
+          <!-- Project Item 1 -->
+          <div class="project-item">
+            <div class="item-header">
+              <h3 class="project-title editable" data-key="proj-title-1">Narocare – Hospital Appointment & Queue Management Mobile App</h3>
+              <span class="project-tech editable" data-key="proj-tech-1">Flutter, Firebase Firestore, Firebase Authentication, FCM, Google Maps API</span>
+            </div>
+            <ul class="item-bullets" data-key="proj-bullets-1">
+              <li class="editable">Developed a Flutter-based mobile application for hospital appointment booking and real-time token queue management.</li>
+              <li class="editable">Implemented separate patient and hospital dashboards with live synchronization using Firebase Firestore.</li>
+              <li class="editable">Integrated GPS-based hospital discovery, doctor scheduling, and automated token generation.</li>
+              <li class="editable">Enabled secure OTP authentication and push notifications using Firebase services.</li>
+              <li class="editable">Designed a responsive healthcare-focused UI with a scalable Firebase backend architecture.</li>
+            </ul>
+          </div>
+
+          <!-- Project Item 2 -->
+          <div class="project-item">
+            <div class="item-header">
+              <h3 class="project-title editable" data-key="proj-title-2">E-PASS Management System (Grace College of Engineering)</h3>
+              <span class="project-tech editable" data-key="proj-tech-2">HTML/CSS, JavaScript, Google Sheets API</span>
+            </div>
+            <ul class="item-bullets" data-key="proj-bullets-2">
+              <li class="editable">Developed a smart digital campus solution designed to streamline student movement and replace paper-based permissions.</li>
+              <li class="editable">Implemented an online gate pass application with a multi-level approval system (Advisor, HOD, Principal) and secure gate verification.</li>
+              <li class="editable">Enabled real-time tracking of student entry/exit to improve campus discipline, transparency, and efficiency.</li>
+            </ul>
+          </div>
+          
+        </div>
+      </section>
+
+      <hr class="section-divider">
+
+      <!-- EDUCATION SECTION -->
+      <section class="resume-section">
+        <h2 class="section-title">EDUCATION</h2>
+        <div class="section-body education-container">
+          <div class="education-item">
+            <div class="item-header">
+              <h3 class="degree-title editable" data-key="edu-degree">Bachelor of Technology - Artificial Intelligence & Data Science</h3>
+            </div>
+            <div class="item-meta">
+              <span class="school-name editable" data-key="edu-school">Grace College of Engineering, Thoothukudi | Anna University</span>
+              <span class="date-range editable" data-key="edu-date">2023 – Present</span>
+            </div>
+            <ul class="item-bullets" data-key="edu-bullets">
+              <li class="editable">Focused on machine learning, data analytics, statistics, and database management.</li>
+              <li class="editable">Actively staying updated with emerging trends in Artificial Intelligence and Data Science.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider">
+
+      <!-- CERTIFICATIONS SECTION -->
+      <section class="resume-section">
+        <h2 class="section-title">CERTIFICATIONS & COURSES</h2>
+        <div class="section-body">
+          <ul class="certifications-list" data-key="certifications">
+            <li class="editable">GenAI Powered Data Analytics Job Simulation – TATA / Forage (Jan 2026)</li>
+            <li class="editable">Artificial Intelligence Course – Novitech (2025)</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="section-divider">
+
+      <!-- LANGUAGES SECTION -->
+      <section class="resume-section">
+        <h2 class="section-title">LANGUAGES</h2>
+        <div class="section-body">
+          <ul class="languages-list" data-key="languages">
+            <li class="editable"><strong>Tamil</strong> (Native)</li>
+            <li class="editable"><strong>English</strong> (Professional)</li>
+            <li class="editable"><strong>Hindi</strong> (Basic)</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="section-divider">
+
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
